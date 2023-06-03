@@ -189,6 +189,9 @@ const createComponents = () => ({
 
   MuiInputLabel: {
     styleOverrides: {
+      root: () => ({
+        '&.Mui-focused': { color: 'black' }
+      }),
       outlined: ({ theme }) => ({
         position: 'relative',
         transform: 'none',
@@ -256,7 +259,9 @@ const createComponents = () => ({
     styleOverrides: {
       root: {
         borderRadius: 5,
-        textTransform: 'initial'
+        textTransform: 'initial',
+        backgroundColor: 'darkgrey',
+        '&:hover': {backgroundColor: 'black'}
       },
       outlined: ({ theme }) => ({
         borderColor: theme.palette.primary.main,
@@ -662,7 +667,7 @@ const createComponents = () => ({
       h1: ({ theme }) => ({
         fontSize: '2.5rem',
         fontWeight: 600,
-        color: '#F5F5F5',
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '2rem'
         }
@@ -670,7 +675,7 @@ const createComponents = () => ({
       h2: ({ theme }) => ({
         fontSize: '2rem',
         fontWeight: 600,
-        color: theme.palette.grey[900],
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '1.75rem'
         }
@@ -678,7 +683,7 @@ const createComponents = () => ({
       h3: ({ theme }) => ({
         fontSize: '1.75rem',
         fontWeight: 600,
-        color: theme.palette.grey[900],
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '1.5rem'
         }
@@ -686,7 +691,7 @@ const createComponents = () => ({
       h4: ({ theme }) => ({
         fontSize: '1.5rem',
         fontWeight: 600,
-        color: theme.palette.grey[900],
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '1.25rem'
         }
@@ -694,7 +699,7 @@ const createComponents = () => ({
       h5: ({ theme }) => ({
         fontSize: '1.25rem',
         fontWeight: 600,
-        color: theme.palette.grey[900],
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '1.125rem'
         }
@@ -702,7 +707,7 @@ const createComponents = () => ({
       h6: ({ theme }) => ({
         fontSize: '1.125rem',
         fontWeight: 600,
-        color: theme.palette.grey[900],
+        color: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
           fontSize: '1rem'
         }
@@ -710,24 +715,24 @@ const createComponents = () => ({
       subtitle1: ({ theme }) => ({
         fontSize: '1rem',
         fontWeight: 600,
-        color: theme.palette.grey[900]
+        color: theme.palette.text.primary
       }),
       subtitle2: ({ theme }) => ({
         fontSize: '0.875rem',
         fontWeight: 600,
-        color: theme.palette.grey[900]
+        color: theme.palette.text.primary
       }),
       body1: ({ theme }) => ({
         fontSize: '1rem',
-        color: theme.palette.grey[900]
+        color: theme.palette.text.primary
       }),
       body2: ({ theme }) => ({
         fontSize: '0.875rem',
-        color: theme.palette.grey[900]
+        color: theme.palette.text.primary
       }),
       caption: ({ theme }) => ({
         fontSize: '0.75rem',
-        color: theme.palette.grey[900]
+        color: theme.palette.text.primary
       })
     }
   }

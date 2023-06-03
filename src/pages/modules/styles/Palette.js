@@ -3,7 +3,7 @@ import { alpha } from '@mui/material/styles';
 const createPalette = (mode) => ({
   mode,
   primary: {
-    main: '#6768ac',
+    main: '#ffffff',
     light: '#6768ac',
     dark: '#6768ac',
     contrastText: '#fff'
@@ -47,7 +47,7 @@ const createPalette = (mode) => ({
   secondary: { main: '#9c27b0', light: '#ba68c8', dark: '#7b1fa2', contrastText: '#fff' },
   info: { main: '#0288d1', light: '#03a9f4', dark: '#01579b', contrastText: '#fff' },
   text: {
-    primary: '#1C1D21',
+    primary: '#F5F5F5',
     secondary: alpha('#1C1D21', 0.6),
     disabled: alpha('#1C1D21', 0.38)
   },
