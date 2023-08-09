@@ -16,6 +16,7 @@ module.exports = {
         hot: true
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new HTMLWebpackPlugin({
             template: './public/index.html'
@@ -23,7 +24,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             Buffer: ['buffer', 'Buffer'],
             process: 'process/browser.js'
-        })
+        }),
     ],
     module: {
         rules: [
