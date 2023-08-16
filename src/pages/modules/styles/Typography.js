@@ -23,7 +23,7 @@ const createTypography = () => ({
         fontSize: '2rem',
         fontWeight: 600,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
+        '@media (max-width:800px)': {
             fontSize: '1.75rem'
         }
     },
@@ -31,15 +31,15 @@ const createTypography = () => ({
         fontSize: '1.75rem',
         fontWeight: 600,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
-            fontSize: '1.5rem'
+        '@media (max-width:800px)': {
+            fontSize: '2rem'
         }
     },
     h3: {
         fontSize: '1.5rem',
         fontWeight: 500,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
+        '@media (max-width:800px)': {
             fontSize: '1.25rem'
         }
     },
@@ -47,7 +47,7 @@ const createTypography = () => ({
         fontSize: '1.25rem',
         fontWeight: 500,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
+        '@media (max-width:800px)': {
             fontSize: '1.25rem'
         }
     },
@@ -55,7 +55,7 @@ const createTypography = () => ({
         fontSize: '1.125rem',
         fontWeight: 500,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
+        '@media (max-width:800px)': {
             fontSize: '1.125em'
         }
     },
@@ -63,8 +63,8 @@ const createTypography = () => ({
         fontSize: '1rem',
         fontWeight: 500,
         lineHeight: 1.5,
-        '@media (max-width:600px)': {
-            fontSize: '1rem'
+        '@media (max-width:800px)': {
+            fontSize: '0.8rem'
         }
     },
     inherit: {
