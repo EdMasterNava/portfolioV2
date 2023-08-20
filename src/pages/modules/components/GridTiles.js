@@ -16,7 +16,6 @@ function GridTiles() {
     const [numColumns, setNumColumns] = React.useState(0);
     const [columnWidth, setColumnWidth] = React.useState(0);
     const [numRows, setNumRows] = React.useState(0);
-    const [rowHeight, setRowHeight] = React.useState(0);
     const gap = 2;
 
     React.useEffect(() => {
@@ -31,7 +30,6 @@ function GridTiles() {
             setNumColumns(columns);
             setColumnWidth((totalWidth + gap) / columns - gap);
             setNumRows(rows);
-            setRowHeight((totalHeight + gap) / rows - gap);
         };
 
         const handleResize = () => {
@@ -50,7 +48,7 @@ function GridTiles() {
         const projectTwoPlacement = (widthSpan % 2 === 0) ? (widthSpan / 2) + 3 : ((widthSpan - 1) / 2) + 3;
         const projectFourPlacement = (widthSpan % 2 === 0) ? (widthSpan / 2) + 1 : ((widthSpan - 1) / 2) + 1;
         if (row === 1 && column === 1) {
-            return <Title columnWidth={columnWidth} gap={gap}/>
+            return <Title gap={gap}/>
         }
         if (row === 3 && column === 1) {
             return <Tagline numColumns={numColumns} columnWidth={columnWidth} gap={gap}/>

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 
 function Title(props) {
-    const columnWidth = props.columnWidth;
     const gap = props.gap;
     return(
         <Box sx={{

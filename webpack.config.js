@@ -54,7 +54,7 @@ module.exports = {
                 use: ['@svgr/webpack']
             },
             {
-                test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.webp$/],
+                test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.webp$/, /\.avif/],
                 use: [
                     {
                         loader: require.resolve('url-loader'),
