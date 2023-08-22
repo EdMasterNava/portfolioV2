@@ -1,18 +1,47 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { useLocation, useRoutes } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Home from './pages/Home';
 import TheRollRoster from './pages/TheRollRoster';
 import './pages/modules/styles/body.css';
 
-function App() {
+export default function App() {
+  const element = useRoutes([
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/therollroster",
+      element: <TheRollRoster />
+    }
+  ]);
+
+  const location = useLocation();
+
+  if (!element) return null;
+
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/therollroster" element={<TheRollRoster />} />
-      </Routes>
-    </>
+    <AnimatePresence mode="wait" initial={false}>
+      {React.cloneElement(element, { key: location.pathname })}
+    </AnimatePresence>
   );
 }
 
-export default App;
+
+
+
+
+
+// function App() {
+//   return (
+//     <>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/therollroster" element={<TheRollRoster />} />
+//       </Routes>
+//     </>
+//   );
+// }
+
+// export default App;

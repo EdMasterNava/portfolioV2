@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Tilty from 'react-tilty';
-import DIDtask from './media/didtask.png';
+import DIDtask from '../media/didtask.png';
 
 function ProjectTwo(props) {
     const [isHovered, setIsHovered] = React.useState(false);
