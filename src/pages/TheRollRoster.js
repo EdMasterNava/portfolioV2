@@ -8,7 +8,7 @@ function TheRollRoster() {
     }, [])
     return (
         <>
-            <GridTiles addElements={addRollRosterElements} pageHeight={1500}/> 
+            <GridTiles addElements={addRollRosterElements} pageHeight={2000}/> 
         </>
     );
 }
