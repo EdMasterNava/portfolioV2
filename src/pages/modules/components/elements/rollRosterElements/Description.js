@@ -36,7 +36,7 @@ function Description(props) {
                             {'The goal was to create a singular place for competitors to view all types of events big or small.'}
                         </Typography>
                         <Typography variant="h6" sx={{textAlign: 'left'}}> 
-                            <a style={{textDecoration: 'none', color: 'white'}} href="https://edmasternava.github.io/calculator/" target='_blank' rel="noreferrer"> 
+                            <a style={{textDecoration: 'none', color: 'white'}} href="https://www.therollroster.com/" target='_blank' rel="noreferrer"> 
                                 See it in action <LaunchIcon sx={{fontSize: 20}}/>
                             </a>
                         </Typography>
