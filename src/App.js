@@ -3,6 +3,7 @@ import { useLocation, useRoutes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from './pages/Home';
 import TheRollRoster from './pages/TheRollRoster';
+import AiReporter from './pages/AiReporter';
 import './pages/modules/styles/body.css';
 
 export default function App() {
@@ -14,6 +15,10 @@ export default function App() {
     {
       path: "/therollroster",
       element: <TheRollRoster />
+    },
+    {
+      path: "/aireporter",
+      element: <AiReporter />
     }
   ]);
 

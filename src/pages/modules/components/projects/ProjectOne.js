@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Tilty from 'react-tilty';
-import theRollRoster from '../media/jiujitsu.avif';
+import image from '../media/ai-reporter.png';
 import { Link } from 'react-router-dom';
 import { motion, useIsPresent } from "framer-motion";
 
@@ -13,12 +13,12 @@ function ProjectOne(props) {
     const widthSpan = numColumns - 2;
     const isPresent = useIsPresent();
 
-    const projectTitle = 'The Roll Roster';
-    const projectImage = theRollRoster;
+    const projectTitle = 'AI Reporter';
+    const projectImage = image;
 
     return(
         <>
-            <Link to='/therollroster'>
+            <Link to='/aireporter'>
                 <Box 
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
@@ -46,7 +46,7 @@ function ProjectOne(props) {
                             backgroundColor: '#171124',
                             backgroundImage: `url(${projectImage})`,
                             backgroundSize: '125%',
-                            backgroundPosition: 'right',
+                            backgroundPosition: 'left -30px top',
                             transformStyle: 'preserve-3d',
                             filter: 'grayscale(100%)',
 
@@ -61,7 +61,8 @@ function ProjectOne(props) {
                             bottom: '20px',
                             left: '30px',
                             transform: 'translateZ(30px)',
-                            textShadow: '2px 2px 0 black'
+                            textShadow: '2px 2px 0 white',
+                            color: '#424242'
                         }}>
                             {projectTitle}
                         </Typography>

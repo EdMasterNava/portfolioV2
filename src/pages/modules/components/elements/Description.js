@@ -6,6 +6,9 @@ function Description(props) {
     const numColumns = props.numColumns;
     const columnWidth = props.columnWidth;
     const gap = props.gap;
+    const projectTitle = props.projectTitle
+    const descriptions = props.descriptions
+    const projectLink = props.projectLink
     const widthSpan = numColumns - 2;
     const numGaps = widthSpan - 1;
     return(
@@ -23,20 +26,21 @@ function Description(props) {
                 <Grid container>
                     <Grid item md={4}>
                         <Typography variant="h2" sx={{color: 'white', textAlign: 'left'}}>
-                            The Roll Roster
+                            {projectTitle}
                         </Typography>
                     </Grid>
                     <Grid item md={8}/>
                     <Grid item md={4}/>
                     <Grid item md={7} sx={{py: 3}}>
-                        <Typography variant="h6" sx={{color: 'white', textAlign: 'left', pb: 2}}>
-                            {'The Roll Roster is an online event calendar for jiu jitsu competitors.'}
-                        </Typography>
-                        <Typography variant="h6" sx={{color: 'white', textAlign: 'left', pb: 2}}>                                
-                            {'The goal was to create a singular place for competitors to view all types of events big or small.'}
-                        </Typography>
+                        {descriptions.map(text => {
+                            return (
+                                <Typography variant="h6" sx={{color: 'white', textAlign: 'left', pb: 2}}>
+                                    {text}
+                                </Typography>
+                            )
+                        })}
                         <Typography variant="h6" sx={{textAlign: 'left'}}> 
-                            <a style={{textDecoration: 'none', color: 'white'}} href="https://www.therollroster.com/" target='_blank' rel="noreferrer"> 
+                            <a style={{textDecoration: 'none', color: 'white'}} href={projectLink} target='_blank' rel="noreferrer"> 
                                 See it in action <LaunchIcon sx={{fontSize: 20}}/>
                             </a>
                         </Typography>
