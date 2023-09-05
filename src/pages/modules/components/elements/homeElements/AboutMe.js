@@ -42,7 +42,7 @@ function AboutMe(props) {
                         <Typography sx={{
                             fontFamily: "'Alfa Slab One', cursive",
                             letterSpacing: '2px',
-                            fontSize: '1.5rem',
+                            fontSize: '1.4rem',
                             mb: '20px'
                         }}>
                             Raised in the sun-soaked streets of Los Angeles, I found stability in a job in 2022. However, I craved more than routine; I sought challenge.
@@ -50,7 +50,7 @@ function AboutMe(props) {
                         <Typography sx={{
                             fontFamily: "'Alfa Slab One', cursive",
                             letterSpacing: '2px',
-                            fontSize: '1.5rem',
+                            fontSize: '1.4rem',
                             mb: '20px'
                         }}>
                             Conversations with software engineer friends revealed a different path—one of constant learning. So I decided to teach myself to code with the goal of becoming a software engineer.
@@ -58,10 +58,10 @@ function AboutMe(props) {
                         <Typography sx={{
                             fontFamily: "'Alfa Slab One', cursive",
                             letterSpacing: '2px',
-                            fontSize: '1.5rem',
+                            fontSize: '1.4rem',
                             mb: '20px'
                         }}>
-                            Now I am actively participating in hackathons to hone my skills and I'm applying to open positions.
+                            Now I am actively participating in hackathons to hone my skills and I'm currently applying to open positions.
                         </Typography>
                     </Box>
                 </Grid>

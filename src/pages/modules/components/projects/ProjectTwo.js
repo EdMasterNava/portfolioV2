@@ -16,7 +16,7 @@ function ProjectTwo(props) {
     const projectTitle = 'sketch2song';
     const projectImage = image
     return(
-        <Link to='./sketch2song'>
+        <Link to='/sketch2song'>
             <Box 
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}

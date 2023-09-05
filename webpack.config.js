@@ -67,7 +67,7 @@ module.exports = {
                 ]
             },
             {
-                test: [/\.eot$/, /\.ttf$/, /\.woff$/, /\.woff2$/, /\.mp4$/],
+                test: [/\.eot$/, /\.ttf$/, /\.woff$/, /\.woff2$/, /\.mp4$/, /\.wav$/],
                 use: [
                     {
                         loader: require.resolve('file-loader'),

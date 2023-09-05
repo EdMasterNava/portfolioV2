@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Home from './pages/Home';
 import TheRollRoster from './pages/TheRollRoster';
 import AiReporter from './pages/AiReporter';
+import Sketch2Song from './pages/Sketch2Song';
 import './pages/modules/styles/body.css';
 
 export default function App() {
@@ -19,6 +20,10 @@ export default function App() {
     {
       path: "/aireporter",
       element: <AiReporter />
+    },
+    {
+      path: "/sketch2song",
+      element: <Sketch2Song />
     }
   ]);
 

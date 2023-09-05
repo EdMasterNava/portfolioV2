@@ -8,7 +8,7 @@ function AiReporter() {
     }, [])
     return (
         <>
-            <GridTiles addElements={addAiReporterElements} pageHeight={2000}/> 
+            <GridTiles addElements={addAiReporterElements} pageHeight={2500}/> 
         </>
     );
 }
