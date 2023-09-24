@@ -10,6 +10,11 @@ function AboutMe(props) {
 
     const events = [
         {
+            title: 'GenLab',
+            date: '09/09/23',
+            role: 'Frontend Engineer'
+        },
+        {
             title: 'ArenaX',
             date: '08/22/23',
             role: 'Frontend and Ai Prompt Engineer'
