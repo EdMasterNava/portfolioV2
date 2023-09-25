@@ -18,6 +18,7 @@ function PageSwitcher(props) {
 
     const [width1, setWidth1] = React.useState('50%');
     const [width2, setWidth2] = React.useState('50%');
+    
     const handleMouseEnter1 = () => {
         setWidth1('52%');
         setWidth2('48%');
